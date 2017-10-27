@@ -10,6 +10,13 @@ UCLASS()
 class TESTPROJECTRAKION_API ABaseCharacter : public ACharacter
 {
 	GENERATED_BODY()
+
+	UPROPERTY(EditDefaultsOnly)
+	class	USpringArmComponent* SpringArm;
+
+	UPROPERTY(EditDefaultsOnly)
+	class UCameraComponent* TPCamera;
+
 public:
 	// Sets default values for this character's properties
 	ABaseCharacter();
@@ -25,6 +32,7 @@ protected:
 	virtual void BeginPlay() override;
 
 private:
+
 	UPROPERTY(EditDefaultsOnly, Category = "Custom")
 		int32 damageSimple;
 

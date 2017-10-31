@@ -24,7 +24,6 @@ ABaseCharacter::ABaseCharacter()
 		SpringArm->TargetArmLength = 250.f;
 		SpringArm->bUsePawnControlRotation = true;
 
-
 		TPCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("Third Person Camera"));
 		TPCamera->SetupAttachment(SpringArm);
 }

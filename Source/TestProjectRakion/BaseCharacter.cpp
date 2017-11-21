@@ -17,7 +17,7 @@ ABaseCharacter::ABaseCharacter()
 		//This option must be deactivated so the "bOrientRotationToMovement" works properly
 		bUseControllerRotationYaw = false;
 
-		GetCharacterMovement()->bOrientRotationToMovement = true;
+		GetCharacterMovement()->bUseControllerDesiredRotation = true;
 
 		SpringArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("Spring Arm"));
 		SpringArm->SetupAttachment(RootComponent);
